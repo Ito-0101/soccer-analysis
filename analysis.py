@@ -13,13 +13,23 @@ df["result"] = df.apply(
 # ホーム勝利
 home_win = df[df["result"] == "home_win"]
 
-# グラフ
+# 英語グラフ
 plt.hist(home_win["home_shots"], bins=20)
 plt.title("Home Team Shots (Win)")
 plt.xlabel("Shots")
 plt.ylabel("Frequency")
 
-# 保存（重要）
+# 保存
 plt.savefig("shots_hist.png")
+
+# 日本語グラフ
+plt.hist(home_win["home_shots"], bins=20)
+plt.title("ホーム勝利時のシュート数")
+plt.xlabel("シュート数")
+plt.ylabel("試合数")
+
+# 保存
+plt.savefig("shots_hist_JP.png")
+
 
 plt.show()
