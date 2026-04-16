@@ -17,4 +17,4 @@ This project analyzes football match data to identify characteristics of winning
 - This suggests that offensive activity (shots) may influence match outcomes
 
 ### Visualization
-![Home Win Shots](home_win_shots_hist.png)
+![Home Win Shots](shots_hist.png)
